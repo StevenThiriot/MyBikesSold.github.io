@@ -1,0 +1,393 @@
+/* Global Style Rules */
+
+body{
+    margin:0;
+    padding:0;
+    width:100%;
+    font-size:18px;
+    font-family: 'Roboto', Arial, Tahoma, sans-serif;
+}
+
+section{
+    padding: 3em 6em;
+}
+
+.flex-container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h1 {
+    font-family: 'Anton', Arial, Tahoma, sans-serif;
+    margin-bottom:0;
+    font-size:3.5em;
+    font-weight: bold;
+}
+
+
+h2{
+    text-align:center;
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 1em;
+
+}
+
+h3{
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+a{
+    color: #ffffff;
+
+}
+
+a:hover{
+    color: #aaaaaa;
+}
+
+.btn{
+    background-color: red;
+    color: #ffffff;
+    border: 3px solid black;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    padding: 1em;
+    border-radius: 25px;
+}
+
+.btn:hover{
+    background-color: darkred;
+}
+
+/* Header and Hav style rules */
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #232323;
+    padding: .5em;
+
+}
+
+header img{
+    width: 350px;
+    color: #ffffff;
+}
+
+nav li{
+    display: inline;
+    text-align: right;
+    padding: .5em;
+}
+
+nav li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 1.5em;
+}
+
+/* Hero secion */
+
+.hero{
+   background-image:  url(../images/bike_hero.jpg); 
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding: 3em;
+   height: 80vh;
+}
+
+.hero h1{
+    color: #000000;
+
+}
+
+/* how it works section */
+
+.flexhow{
+    flex-basis:  33%;
+
+}
+
+.how img{
+    display: block;
+    margin: auto;
+    width: 65%;
+
+}
+
+.how p{
+    margin-left: .7em;
+    margin-right: .7em;
+    font-size: 1.5em;
+}
+
+.how {
+    margin-top: 0em;
+    padding-top: .5em;
+}
+
+/* who we are section */
+ 
+
+.who{
+    background-color: #adc5e4;
+    font-size: 1.5em;
+    padding-top: .25em;
+}
+
+.who .flex-container{
+    align-items: flex-start;
+}
+
+.flexwhoright{
+    flex-basis: 48%;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2em;
+}
+
+.flexwholeft{
+    flex-basis: 48%;
+
+}
+
+.who img{
+    border: 6px solid #dd0000;
+}
+
+.who li{
+    list-style-type: none;
+}
+
+.who i{
+    color: #dd0000;
+    font-size: 1em;
+    padding-right: 1em;
+}
+
+/* testimonial section */
+
+.test .flex-container{
+    align-items: stretch;
+}
+
+.flextest{
+    flex-basis: 48%;
+    margin: auto;
+    font-size: 1em;
+}
+
+.flextest i{
+    color: #dd0000;
+    float:left;
+    font-size: 4.5em;
+    margin-right: 25px;
+}
+
+.ltbold{
+    font-weight: bold;
+    color: #282828;
+}
+
+.ready{
+    background-color: #adc5e4;
+    text-align: center;
+    padding: 2em;
+}
+
+.brands{
+    background-color: #ffffff;
+}
+
+.brands img{
+    display: inline;
+    width: 10%;
+    margin: auto;
+}
+
+footer{
+    background-color: #232323;
+    color: #ffffff;
+    text-align: center;
+    padding: .5em 0em;
+    font-size: .7em;
+}
+
+footer li{
+    display: inline;
+}
+
+footer i{
+    color: #dd0000;
+    font-size: 3em;
+    padding-left: 0em;
+    padding-right: 1em;
+}
+
+footer a i:hover{
+    color: #aa0000;
+}
+
+/* mobile view port */
+
+@media only screen and (max-width:767px){
+    body{
+        font-size: 1em;
+    }
+
+    section{
+        padding: 1em;
+    }
+
+    .flex-container{
+        flex-direction: column;
+    }
+
+    header{
+        flex-direction: column;
+    }
+
+    header img{
+        margin:auto;
+    }
+
+    .brands{
+        display:none;
+    }
+
+    nav{
+        width: 100%;
+    }
+
+    nav img{
+        margin: auto;
+    }
+
+    nav ul{
+        padding: 0;
+        margin: 0;
+    }
+
+    nav li{
+        display: block;
+        text-align: center;
+        border-bottom: 1px solid white;
+        padding: 1em;
+        font-size: 1.1em;
+    }
+
+    .hero{
+        background-image: url(../images/bike_hero_mobile.jpg);
+        text-align: center;
+        padding: 1em 6em;
+        height: 130vh
+    }
+
+    .hero h1{
+        font-size: 4em; 
+    }
+
+    .hero h1{
+        font-size: 4em;
+    }
+
+    .hero a{
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+    footer p{
+        font-size: 2em;
+        padding: 0em 5em;
+    }
+
+    footer h2{
+        font-size: 3.0em;
+    }
+    .flexbike{
+        width: 100%;
+    }
+}
+
+/* inventory */
+
+.bike{
+    border-bottom: 4px dotted #dd0000;
+}
+
+.bike .flex-container{
+    align-items: flex-start;
+}
+
+.flexbike{
+    flex-basis: 50%;
+}
+
+.bike table{
+    border-collapse: collapse;
+    margin: auto;
+}
+
+.bike td,th{
+    border: 1px solid black;
+}
+
+.bike table th{
+    text-align: left;
+}
+
+.bike img{
+    width: 100%;
+}
+
+/* contact.html styles */
+
+.contact{
+    width: 45%;
+    margin: auto;
+    margin-bottom: 1em;
+}
+
+.contactform{
+    margin: 3em auto;
+    background-color: #e9e9e9;
+    padding-right: 2em;
+}
+
+.contactform h3{
+    text-align: left;
+    margin-top: 0;
+    padding-left: 1em;
+    color: #aa0000;
+}
+
+form{
+    padding: 0em 2em 2em 2em;
+}
+
+form input{
+    height: 1.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin: .5em 0em;
+}
+
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
